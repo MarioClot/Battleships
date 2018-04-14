@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="partida.js"></script>
+    <title>Partida</title>
+</head>
+
+<body>
+    <h1>Projecte Battleship</h1>
+
+    <div class="formulari">
+        <div class="form-group" id="nom">
+            <label for="inputName">Nom del jugador</label>
+            <input type="name" class="form-control" id="inputName" placeholder="escriu el teu nom">
+        </div>
+        <fieldset class="form-group" id="filterTaulell">
+            <label>Escull tamany taulell</label>
+            <div class="row">
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="inlineRadio1" value="5">
+                        <label class="form-check-label" for="gridRadios1">5 x 5 </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="inlineRadio2" value="7">
+                        <label class="form-check-label" for="gridRadios2">7 x 7 </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="inlineRadio3" value="10">
+                        <label class="form-check-label" for="gridRadios3">10 x 10 </label>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+
+        <div id="acceptar">
+            <button type="submit" class="btn btn-primary" onclick='new Partida(document.getElementById("inputName").value,$("#filterTaulell input:checked").val());'>Accepta</button>
+        </div>
+    </div>
+
+    <div id="vaixells">
+        <div class="grid-container">
+            <div class="grid-item">
+                <img id="barco1" src="piece.png" draggable="true" ondragstart="dragStart(event)">
+            </div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+            <div class="grid-item">7</div>
+            <div class="grid-item">8</div>
+            <div class="grid-item">9</div>
+            <div class="grid-item">10</div>
+            <div class="grid-item">11</div>
+            <div class="grid-item">12</div>
+            <div class="grid-item">13</div>
+            <div class="grid-item">14</div>
+            <div class="grid-item">15</div>
+            <div class="grid-item">16</div>
+            <div class="grid-item">17</div>
+            <div class="grid-item">18</div>
+            <div class="grid-item">19</div>
+            <div class="grid-item">20</div>
+            <div class="grid-item">21</div>
+            <div class="grid-item">22</div>
+            <div class="grid-item">23</div>
+            <div class="grid-item">24</div>
+            <div class="grid-item">25</div>
+        </div>
+    </div>
+    <br>
+    <div class="sep">
+    </div>
+
+
+    <div id="joc">
+        <div id="clicktable">
+        </div>
+        <div id="ddtable">
+        </div>
+    </div>
+
+
+
+    <!--div id="gameboard"></div-->
+
+
+
+</html>

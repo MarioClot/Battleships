@@ -1,13 +1,92 @@
 body {
-    margin: 60px auto;
-    width: 70%;
-    max-width: 950px;
+    margin: 60px 10px;
 }
 
 h1 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    border: 1px solid powderblue;
+    padding: 30px;
+    text-align: center;
+
 }
+
+.formulari {
+    float: left;
+    border: 1px solid powderblue;
+    padding: 5px;
+    width: 40%;
+    margin-left: 10px;
+}
+
+.formulari label {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    color: #333;
+}
+
+#nom {
+    margin-left: 5%;
+}
+
+#inputName {
+    width: 50%;
+}
+
+#filterTaulell {
+    margin-left: 5%;
+}
+
+#acceptar {
+    margin-left: 5%;
+}
+
+#vaixells {
+    float: left;
+    border: 1px solid powderblue;
+    padding: 5px;
+    width: 55%;
+    margin-left: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 1px;
+}
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    font-size: 17px;
+    text-align: center;
+}
+
+.sep{
+    height: 10px;
+}
+
+#joc {
+    float: left;
+    padding: 5px;
+
+}
+
+#clicktable {
+    margin-left: 100px;
+    float: left;
+    padding: 5px;
+
+}
+
+#ddtable {
+    float: left;
+    padding: 5px;
+    margin-left: 100px;
+}
+
+
 
 p, button, input {
     font-size: 1.5em;
@@ -18,7 +97,7 @@ p, button, input {
 
 #gameboard {
 	position:relative;
-	margin:0 auto auto;
+	margin:10px auto auto;
 	width:500px;
 	height:500px;
 }
