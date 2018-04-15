@@ -58,7 +58,7 @@ h1 {
 .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 10px;
+    /* padding: 10px; */
     font-size: 17px;
     text-align: center;
 }
@@ -84,6 +84,9 @@ h1 {
     float: left;
     padding: 5px;
     margin-left: 100px;
+}
+
+#barco1 {
 }
 
 
@@ -117,8 +120,13 @@ p, button, input {
 	position:relative;
 	margin:10px auto auto;
 	width:500px;
-	height:500px;
+    height:500px;
+    
 }
+
+#td00:hover{
+    background-color:rgb(170, 225, 250);
+ }
 
 #gameboard2 div {
 	position:absolute;

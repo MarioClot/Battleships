@@ -1,9 +1,19 @@
+class Jugador {
+    constructor(nom) {
+        this.nom = nom;
+        this.puntuacio = 0;
+    }
+}
+
 class Partida {
     constructor(nom, tamany) {
-        this.nom = nom;
+        this.jugador = new Jugador(nom);
         this.tamany = tamany;
         this.gameBoard = [];
         this.squareSize = 50;
+        this.jugadors = [];
+        this.jugadors.push(this.jugador);
+        this.torn = false;
         this.getGameboard();
         this.initGame();
     }
@@ -161,24 +171,22 @@ class Partida {
         });
 
         function allowDrop(ev) {
-            console.log("sobre drag");
+            console.log(ev);
             ev.preventDefault();
         }
 
         function dragStart(ev) {
-            console.log("inici drag");
-            console.log("ev.target.id: " + ev.target.id);
+            // console.log("inici drag");
+            // console.log("ev.target.id: " + ev.target.id);
             ev.dataTransfer.setData("imatge", ev.target.id);
         }
 
         function drop(ev) {
-            console.log(ev);
+            //console.log(ev);
             ev.preventDefault();
             var data = ev.dataTransfer.getData("imatge");
-            console.log("data: " + data);
-            //if (this.childNodes.length < 1) {
-            ev.target.appendChild(document.getElementById(data).cloneNode(true));
-            //}
+            ev.target.appendChild(document.getElementById(data));
+            
         }
     }
 }
