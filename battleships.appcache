@@ -1,7 +1,7 @@
 CACHE MANIFEST
 
 CACHE:
-login.html
+partida.html
 logica.js
 Partida.js
 Jugador.js
@@ -13,7 +13,7 @@ media/water.mp3
 
 #barco2
 imatges/barco2/barco2.png
-imatges/barco2/piece1.png
+
 imatges/barco2/piece2.png
 
 #barco3
@@ -44,4 +44,4 @@ imatges/broken-img.png
 NETWORK:
 
 FALLBACK:
-imatges/* imatges/broken-img.png
+imatges/barco2/piece1.png imatges/broken-img.png
